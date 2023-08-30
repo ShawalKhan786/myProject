@@ -1,18 +1,53 @@
 <template>
 
+<v-container  style="background-color: #ffffff; ">
+
+    <v-card class="mt-15" height="1000px" style="background-color: #eeeeee;" >
+    
+      <v-card
+    class="mx-auto"
+    max-width="1000"
+   
+  >
+    <template v-slot:title>
+      <div class="text-center align-center">
+        <p style="font-family: 'Times New Roman', Times, serif; font-weight: bold;" >Welcome To My World!!!</p>
+        <v-divider></v-divider>
+      </div>
+    </template>
+
+    <v-card-text>
+      This website is under process and alot of things coming soon....
+    </v-card-text>
+  </v-card>
+  <v-row>
+    <v-col cols="3">
+      <v-card class="mt-6 ml-3" height="400px">
+        This website is under process and alot of things coming soon....</v-card>
+    </v-col>
+    <v-col cols="9">
+      <v-card class="mt-6 mr-3" height="400px">
+        This website is under process and alot of things coming soon....
+    </v-card>
+    </v-col>
+  </v-row>
+ 
     
 
-    <v-card class="ml-1" height="1000px" >
-      <div>
-  
-  </div>
  
- 
-        </v-card>
        
+     <!-- This is a Social Links Section -->
   <div class="social">
-    <span class="mdi mdi-linkedin mdi-24px" style="color: #3b5998;"></span>
-    <span class="mdi mdi-xing mdi-24px" style="color: #156b64;"></span>
+    <a
+              href="https://www.linkedin.com/in/shawalibrahimkhan/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >   <span class="mdi mdi-linkedin mdi-24px" style="color: #3b5998;"></span> </a>
+            <a
+              href="https://www.xing.com/profile/ShawalIbrahim_Khan/cv"
+              target="_blank"
+              rel="noopener noreferrer"
+            >   <span class="mdi mdi-xing mdi-24px" style="color: #156b64;"></span> </a>
    
     <a
               href="https://www.youtube.com/channel/UCKuXOibGrYaw6vHJwHhxREQ"
@@ -20,14 +55,30 @@
               rel="noopener noreferrer"
             >  <span class="mdi mdi-youtube mdi-24px" style="color: #ee1010;"></span>    
           </a>
-          <span class="mdi mdi-facebook mdi-24px" style="color: #3b5998;"></span>
-          <span class="mdi mdi-instagram mdi-24px" style="color: #e44b2d;"></span>
-          <span class="mdi mdi-tiktok mdi-24px" style="color: #e44b2d;"></span>
+          <a
+              href="https://www.facebook.com/shawalkhnz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >  <span class="mdi mdi-facebook mdi-24px" style="color: #3b5998;"></span></a>
+            <a
+              href="https://www.instagram.com/shawalkhanofficial/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >  <span class="mdi mdi-instagram mdi-24px" style="color: #e44b2d;"></span> </a>
+            <a
+              href="https://www.tiktok.com/@www.shawalkhan.com?_t=8fH0hWqBLjb&_r=1"
+              target="_blank"
+              rel="noopener noreferrer"
+            > 
           
-            
+            <img src="tiktok.png"  alt="" width="22" height="22"> </a>
            
            
           </div>
+        </v-card>
+        </v-container>
+     
+     
 </template>
 <script>
 

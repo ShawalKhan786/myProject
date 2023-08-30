@@ -1,12 +1,8 @@
 <template>
-  <v-card
-    class="header"
-    height="80"
-    style="background-color: rgb(255, 255, 255)"
-  >
+  <v-card class="header" style="background-color: rgb(8, 8, 8)">
     <v-row>
       <v-col cols="12">
-        <v-toolbar height="80" style="background-color: rgb(255, 255, 255)">
+        <v-toolbar height="65" style="background-color: rgb(255, 255, 255)">
           <img
             src="ShawalKhan.png"
             height="60"
@@ -14,7 +10,17 @@
             style="border-radius: 30px"
           />
 
-          <p class="ml-3 mt-1" style="font-size: 26px; font-weight: bold; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ">
+          <p
+            class="ml-3 mt-1"
+            style="
+              font-size: 26px;
+              font-weight: bold;
+              color: #050404;
+
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                serif;
+            "
+          >
             Shawal Khan
           </p>
 
@@ -23,7 +29,6 @@
           <div class="button d-none d-sm-block">
             <button
               class="ml-3 mr-3"
-            
               v-for="(page, index) in pages"
               :key="index"
             >
@@ -39,7 +44,7 @@
                   <v-btn
                     class="ma-2"
                     v-bind="props"
-                    style="color: rgb(48, 47, 47)"
+                    style="color: rgb(255, 254, 254)"
                   >
                     <span
                       class="mdi mdi-menu mdi-36px"
@@ -48,12 +53,15 @@
                   </v-btn>
                 </template>
                 <v-list>
-                  <v-list-item   style="font-size: 16px; font-weight: bold; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif "
-                    class="ml-3"
+                  <v-list-item
                     v-for="(page, index) in pages"
                     :key="index"
-                    >{{ page }}</v-list-item
+                    class="hide-on-md"
                   >
+                    <v-btn width="155px" outlined class="page-button">
+                      {{ page }}
+                    </v-btn>
+                  </v-list-item>
                 </v-list>
               </v-menu>
             </v-row>
@@ -82,11 +90,11 @@ export default {
   z-index: 1000;
 }
 .button {
-  margin-top: 50px;
+  margin-top: 35px;
   margin-right: 35px;
   font-size: 20px;
- font-family: 'Times New Roman', Times, serif;
-  color: #3e08d2;
+  font-family: "Times New Roman", Times, serif;
+  color: #000000;
 }
 .social {
   margin-bottom: 50px;
@@ -100,8 +108,9 @@ export default {
   color: #f40303; /* Change this to your desired hover background color */
   /* You can also modify other styles like text color, border, etc. */
 }
+
 .v-list-item:hover {
-  color: #f40303; /* Change this to your desired hover text color */
+  color: #615d5d; /* Change this to your desired hover text color */
   /* You can also modify other styles like background color, border, etc. */
 }
 .menu {
@@ -114,6 +123,14 @@ export default {
 @media (max-width: 600px) {
   .menu {
     display: block; /* Show the div only for small screens */
+  }
+}
+.v-list-item {
+  padding-block: 90px;
+}
+@media (min-width: 600px) {
+  .hide-on-md {
+    display: none; /* Hide the list item on medium and larger screens */
   }
 }
 </style>
