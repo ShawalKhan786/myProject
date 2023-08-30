@@ -3,48 +3,40 @@
     
 
     <v-card class="ml-1" height="1000px" >
-     
+      <div>
   
+  </div>
+ 
  
         </v-card>
- 
+       
   <div class="social">
-            <font-awesome-icon 
-              :icon="['fab', 'facebook']"
-              style="color: #1877f2"
-            /> 
-            &nbsp;
-            <font-awesome-icon
-              :icon="['fab', 'twitter']"
-              style="color: #1da1f2"
-            />
-            &nbsp;
-            <a
+    <span class="mdi mdi-linkedin mdi-24px" style="color: #3b5998;"></span>
+    <span class="mdi mdi-xing mdi-24px" style="color: #156b64;"></span>
+   
+    <a
               href="https://www.youtube.com/channel/UCKuXOibGrYaw6vHJwHhxREQ"
               target="_blank"
               rel="noopener noreferrer"
-            >
-              <font-awesome-icon
-                :icon="['fab', 'youtube']"
-                style="color: #ff0000"
-              />
-            </a>
+            >  <span class="mdi mdi-youtube mdi-24px" style="color: #ee1010;"></span>    
+          </a>
+          <span class="mdi mdi-facebook mdi-24px" style="color: #3b5998;"></span>
+          <span class="mdi mdi-instagram mdi-24px" style="color: #e44b2d;"></span>
+          <span class="mdi mdi-tiktok mdi-24px" style="color: #e44b2d;"></span>
+          
+            
+           
+           
           </div>
 </template>
 <script>
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import {
-  faFacebook,
-  faTwitter,
-  faYoutube /* Add more icons here */,
-} from "@fortawesome/free-brands-svg-icons";
 
-library.add(faFacebook, faTwitter, faYoutube /* Add more icons here */);
+
+
 export default {
   name: "ContentPage",
   components: {
-    FontAwesomeIcon,
+
   },
   data() {
     return {

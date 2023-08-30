@@ -1,5 +1,9 @@
 <template>
-  <v-card class="header" height="80" style="background-color: rgb(255, 255, 255)">
+  <v-card
+    class="header"
+    height="80"
+    style="background-color: rgb(255, 255, 255)"
+  >
     <v-row>
       <v-col cols="12">
         <v-toolbar height="80" style="background-color: rgb(255, 255, 255)">
@@ -10,15 +14,19 @@
             style="border-radius: 30px"
           />
 
-          <p class="ml-3 mt-1" style="font-size: 26px; font-weight: bold;">
+          <p class="ml-3 mt-1" style="font-size: 26px; font-weight: bold; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ">
             Shawal Khan
           </p>
-
 
           <v-spacer></v-spacer>
 
           <div class="button d-none d-sm-block">
-            <button class="ml-3" style="text-decoration: underline;" v-for="(page, index) in pages" :key="index">
+            <button
+              class="ml-3 mr-3"
+            
+              v-for="(page, index) in pages"
+              :key="index"
+            >
               {{ page }}
             </button>
           </div>
@@ -28,12 +36,19 @@
 
               <v-menu transition="slide-x-reverse-transition">
                 <template v-slot:activator="{ props }">
-                  <v-btn color="secondary" class="ma-2" v-bind="props">
-                    menu
+                  <v-btn
+                    class="ma-2"
+                    v-bind="props"
+                    style="color: rgb(48, 47, 47)"
+                  >
+                    <span
+                      class="mdi mdi-menu mdi-36px"
+                      style="color: rgb(48, 47, 47)"
+                    ></span>
                   </v-btn>
                 </template>
                 <v-list>
-                  <v-list-item
+                  <v-list-item   style="font-size: 16px; font-weight: bold; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif "
                     class="ml-3"
                     v-for="(page, index) in pages"
                     :key="index"
@@ -61,15 +76,17 @@ export default {
 };
 </script>
 <style>
-.header{
+.header {
   position: fixed; /* Set the header to be fixed */
   width: 100%; /* Make the header span the full width of the viewport */
-  z-index: 1000; 
+  z-index: 1000;
 }
 .button {
   margin-top: 50px;
   margin-right: 35px;
-  font-weight: bold;
+  font-size: 20px;
+ font-family: 'Times New Roman', Times, serif;
+  color: #3e08d2;
 }
 .social {
   margin-bottom: 50px;
