@@ -1,0 +1,43 @@
+
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+  p {
+    font-size: 16px;
+  }
+
+ 
+  @media (max-width: 768px) {
+    p {
+      font-size: 10px; /* Decrease font size for mobile screens */
+    }
+
+    /* Adjust heading sizes for mobile screens */
+    h1 {
+      font-size: 24px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+  @media (max-width: 768px) {
+    /* Adjust the image size for mobile screens */
+    .responsive-image {
+      max-width: 100%; /* You can adjust this value as needed */
+      height: auto;
+    }
+  }
+

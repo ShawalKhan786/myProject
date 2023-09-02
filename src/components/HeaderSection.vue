@@ -1,5 +1,7 @@
 <template>
-  <v-card class="header" style="background-color: rgb(8, 8, 8)">
+     <v-card class="header" :style="{ top: scrollingUp ? '0' : '-100px' }">
+ 
+
     <v-row>
       <v-col cols="12">
         <v-toolbar height="65" style="background-color: rgb(255, 255, 255)">
@@ -10,10 +12,10 @@
             style="border-radius: 30px"
           />
 
-          <p
+          <h1
             class="ml-3 mt-1"
             style="
-              font-size: 26px;
+              
               font-weight: bold;
               color: #050404;
 
@@ -22,18 +24,14 @@
             "
           >
             Shawal Khan
-          </p>
+           
+        </h1>
 
           <v-spacer></v-spacer>
 
           <div class="button d-none d-sm-block">
-            <button
-              class="ml-3 mr-3"
-              v-for="(page, index) in pages"
-              :key="index"
-            >
-              {{ page }}
-            </button>
+            <router-link class="ml-3 mr-3" to="/">About Me</router-link>
+            <router-link class="ml-3 mr-3" to="about">About</router-link>
           </div>
           <div class="menu">
             <v-row justify="center">
@@ -53,16 +51,15 @@
                   </v-btn>
                 </template>
                 <v-list>
-                  <v-list-item
-                    v-for="(page, index) in pages"
-                    :key="index"
-                    class="hide-on-md"
-                  >
-                    <v-btn width="155px" outlined class="page-button">
-                      {{ page }}
-                    </v-btn>
-                  </v-list-item>
-                </v-list>
+  <v-list-item class="hide-on-md">
+    <div class="ml-3 mr-3">
+      <router-link to="/">Home</router-link>
+    </div>
+    <div class="ml-3 mr-3">
+      <router-link to="about">About</router-link>
+    </div>
+  </v-list-item>
+</v-list>
               </v-menu>
             </v-row>
           </div>
@@ -73,21 +70,44 @@
 </template>
 
 <script>
+
 export default {
-  name: "HeaderSection",
-  components: {},
   data() {
     return {
-      pages: ["Home", "About", "Career", "Youtube", "Contact"],
+      scrollPos: 0,
+      scrollingUp: true,
     };
   },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+ 
+  methods: {
+    handleScroll() {
+      const currentScrollPos = window.scrollY;
+
+      if (currentScrollPos > this.scrollPos) {
+        // Scrolling down
+        this.scrollingUp = false;
+      } else {
+        // Scrolling up
+        this.scrollingUp = true;
+      }
+
+      this.scrollPos = currentScrollPos;
+    },
+  },
+
 };
 </script>
 <style>
 .header {
   position: fixed; /* Set the header to be fixed */
+  top: 0; /* Position at the top of the viewport */
   width: 100%; /* Make the header span the full width of the viewport */
   z-index: 1000;
+  background-color: rgba(8, 8, 8, 0.8);
+  transition: top .5s ease;
 }
 .button {
   margin-top: 35px;
@@ -126,11 +146,15 @@ export default {
   }
 }
 .v-list-item {
-  padding-block: 90px;
+  padding-block: 120px;
 }
 @media (min-width: 600px) {
   .hide-on-md {
     display: none; /* Hide the list item on medium and larger screens */
   }
 }
+.hide-on-md {
+    display: flex;
+    flex-direction: column; /* This makes the items stack vertically */
+  }
 </style>
