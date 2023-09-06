@@ -5,6 +5,9 @@ import { loadFonts } from './plugins/webfontloader'
 import '@mdi/font/css/materialdesignicons.css';
 import router from './router'
 import './global.css'
+import 'bootstrap/dist/js/bootstrap';
+
+
 
 
 loadFonts()

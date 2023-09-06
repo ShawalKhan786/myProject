@@ -7,7 +7,7 @@
   <p style="font-size: small;  color: white">© 2023 ShawalKhan All Rights Reserved.</p> 
 </div>
 <br>
-<SocialLinks class="mt-6" />
+<SocialLinks class="social-links mt-6" />
 <v-spacer></v-spacer>
 <div class="mr-6 mt-6">
 <p style="font-size: small; color: white">Developed by: Shawal Khan  </p>
@@ -31,3 +31,11 @@
     
    }
    </script>
+   <style scoped>
+  
+  @media (min-width: 600px) {
+  .social-links {
+    display: none;
+  }
+}
+</style>

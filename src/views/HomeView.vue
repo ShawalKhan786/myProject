@@ -71,6 +71,11 @@ export default {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 600px) {
+  .social {
+    display: none;
+  }
+}
 
 .social font-awesome-icon {
   margin-bottom: 10px;
