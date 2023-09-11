@@ -300,7 +300,7 @@ Hobbies</h1><v-divider></v-divider>
       style="display: block;"
       
     >
-      {{ item }} <br>
+     <div class="mt-1"> {{ item }} </div> <br>
     </v-chip>
 </div>
     
@@ -323,7 +323,7 @@ export default {
       isPasswordCorrect: false,
       chipItems: ['JavaScript', 'VueJS', 'HTML5', 'CSS', 'Bootstrap5', 'Flexbox', 'Vuetify','npm','NuxtJS',
     'Vuex','Templates','Api Integrationa', 'Insomnia','Git', 'Jira', 'Slack', 'Refinement', 'Configuration','Node JS','Smart Git','SASS', 'Modular Designs', 'Responsive Design','Docker', 'Tailwind CSS'], // Replace with your array of items
-  Hobbies: ['Watching Movies', 'Internet Explorer', 'Travelling', 'Youtuber']
+  Hobbies: ['Watching Movies', 'Internet Explorer', 'Travelling',]
     };
   },
   methods: {
