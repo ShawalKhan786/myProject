@@ -220,7 +220,7 @@ Skills</h1>
       <div class="card-header">
         <h1 id="Projects"><i class="mdi mdi-code"></i>
 Projects</h1> 
-        <p>Enter The Password To See All The Projects:</p>
+        <p>(only for recruiters or recruitment process) </p>
         <input type="password" v-model="password" placeholder="Enter Password">
         <button class="primary" @click="checkPassword">Submit</button>
       </div>
