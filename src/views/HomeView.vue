@@ -166,7 +166,7 @@
       
       </v-row>
     </div>
-     <div id="Experience"></div><div id="Skills"></div>
+     <div id="Experience"></div>
       <v-row class="mt-9" id="Experience">
         
         <v-col cols="12 col-md-8 mt-6"><h1><i class="mdi mdi-briefcase"></i>
@@ -192,8 +192,8 @@ Experience</h1>
 
 
         </v-card>
-        </v-col>
-        <v-col cols="12 col-md-4 mt-6"><h1 ><i class="mdi mdi-code-brackets"></i>
+        </v-col >
+        <v-col cols="12 col-md-4 mt-6"  id="Skills"><h1 ><i class="mdi mdi-code-brackets"></i>
 Skills</h1>
           <div class="text-center">
    
@@ -213,12 +213,12 @@ Skills</h1>
 </v-card>
   </div></v-col> </v-row>
 
-<v-row  >
+<v-row id="Projects" >
   <v-col cols="12 col-md-12" style="background-color: #5a67c8">
    
     <div class="card">
       <div class="card-header">
-        <h1 id="Projects"><i class="mdi mdi-code"></i>
+        <h1 ><i class="mdi mdi-code"></i>
 Projects</h1> 
         <p>(only for recruiters or recruitment process) </p>
         <input type="password" v-model="password" placeholder="Enter Password">
@@ -257,11 +257,11 @@ qw
 </v-row>
 
 <div style="background-color: #f7f7f7">
-  <v-row class="mt-9">
+  <v-row class="mt-9" id="Certificate">
     <v-col cols="12 col-md-4">
       <div class="card" >
   <div class="card-body">
-    <h1 id="Certificate"><i class="mdi mdi-certificate"></i>
+    <h1 ><i class="mdi mdi-certificate"></i>
 Certificate</h1><v-divider></v-divider>
     <h4 class="card-subtitle mb-2 text-body-secondary">Vuejs The Complete Guide</h4>
     <p class="card-text">Including state management, component composition, and building dynamic user interfaces.</p>
