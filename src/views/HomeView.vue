@@ -1,19 +1,19 @@
 <template>
   <v-container>
-    <nav id="navbar-example2" class="navbar px-3  ">
+    <nav id="navbar-example2" class="navbar bg-body-tertiary px-3  mb-3">
   <img
   src="ShawalKhanlogo.png"
     class="custom-image"
           />
   <ul class="nav nav-pills">
     <li class="nav-item">
-      <a class="nav-link" href="#Introduction" style="font-weight: bold;">Introduction</a>
+      <a class="nav-link" href="#Introduction">Introduction</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#Education" style="font-weight: bold;" >Education</a>
+      <a class="nav-link" href="#Education">Education</a>
     </li>
     <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" style="font-weight: bold;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">More</a>
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">More</a>
       <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="#Experience">Experience</a></li><li><hr class="dropdown-divider"></li>
         <li><a class="dropdown-item" href="#Skills">Skills</a></li>
@@ -26,16 +26,16 @@
     </li>
   </ul>
 </nav>
-
-    <v-card class="mt-15">
+<div id="Introduction"></div>
+    <v-card class="mt-15" >
       
-        <v-row>
+        <v-row> 
               <v-col cols="12 col-md-12">
                
-              
+               
              
           <img class="custom-rounded mt-9" src="ShawalKhan.png" alt=""  style="max-width: 10%; max-height: 100%;"/>
-          <h1 class="mt-3 text-center  "  id="Introduction">Introduction</h1>
+         <h1 class="mt-3 text-center mt-9 "  >Introduction</h1>
         </v-col>
               <v-divider></v-divider>
             </v-row><v-row>
@@ -71,11 +71,11 @@
       </v-row>
      
     </v-card>
-    <div style="background-color: #f7f7f7">
-    <v-row >
-      <v-col cols="12">
+    <div id="Education" style="background-color: #f7f7f7">
+    <v-row  >
+      <v-col cols="12" >
       <div>
-      <h1 class="text-center mt-6" id="Education"
+      <h1 class="text-center mt-12" 
       ><i class="mdi mdi-school"></i>&nbsp;Education</h1><v-divider></v-divider></div>
      
     </v-col>
@@ -166,10 +166,10 @@
       
       </v-row>
     </div>
-     
-      <v-row class="mt-9">
+     <div id="Experience"></div><div id="Skills"></div>
+      <v-row class="mt-9" id="Experience">
         
-        <v-col cols="12 col-md-8"><h1 id="Experience"><i class="mdi mdi-briefcase"></i>
+        <v-col cols="12 col-md-8 mt-6"><h1><i class="mdi mdi-briefcase"></i>
 Experience</h1>
         <v-card min-height="370px"
 >
@@ -193,7 +193,7 @@ Experience</h1>
 
         </v-card>
         </v-col>
-        <v-col cols="12 col-md-4"><h1 id="Skills"><i class="mdi mdi-code-brackets"></i>
+        <v-col cols="12 col-md-4 mt-6"><h1 ><i class="mdi mdi-code-brackets"></i>
 Skills</h1>
           <div class="text-center">
    
@@ -341,14 +341,11 @@ export default {
 .custom-rounded {
   border-radius: 20px; /* Adjust the value as needed */
 }
-.navbar{
-
-}
 #navbar-example2 {
   position: fixed;
   top: 0;
   width: 91.5vw; /* Default width based on viewport width */
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #fff; /* Set your preferred background color */
   z-index: 1;
 }
 
