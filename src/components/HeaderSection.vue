@@ -5,7 +5,8 @@
         <v-toolbar height="65" style="background-color: rgb(255, 255, 255)">
           <img
             src="ShawalKhanlogo.png"
-            height="60"
+            height="50"
+            max-width="60%"
             class="ml-9"
             style="border-radius: 30px"
           />
@@ -27,7 +28,7 @@
           <div class="button mt-12">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
-                <router-link to="/">
+                <router-link to="/" class="no-underline">
                   <button
                     class="nav-link active"
                     id="home-tab"
@@ -37,15 +38,16 @@
                     role="tab"
                     aria-controls="home-tab-pane"
                     aria-selected="true"
+                    style="text-decoration: none;"
                   >
                     About Me
                   </button>
                 </router-link>
               </li>
               <li class="nav-item" role="presentation">
-                <router-link to="about">
+                <router-link to="about" class="no-underline">
                   <button
-                    class="nav-link"
+                    class="nav-link no-underline"
                     id="profile-tab"
                     data-bs-toggle="tab"
                     data-bs-target="#profile-tab-pane"
@@ -53,40 +55,14 @@
                     role="tab"
                     aria-controls="profile-tab-pane"
                     aria-selected="false"
+                    style="text-decoration: none;"
                   >
                     Purpose
                   </button>
                 </router-link>
               </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="contact-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#contact-tab-pane"
-                  type="button"
-                  role="tab"
-                  aria-controls="contact-tab-pane"
-                  aria-selected="false"
-                >
-                  Contact
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="disabled-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#disabled-tab-pane"
-                  type="button"
-                  role="tab"
-                  aria-controls="disabled-tab-pane"
-                  aria-selected="false"
-                  disabled
-                >
-                  Disabled
-                </button>
-              </li>
+           
+            
             </ul>
             <div class="tab-content" id="myTabContent">
               <div
@@ -134,7 +110,7 @@
               <v-btn data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                 ><span
                   class="mdi mdi-menu mdi-36px"
-                  style="color: rgb(48, 47, 47)"
+                  style="color: rgb(31, 70, 245)"
                 ></span
               ></v-btn>
 
@@ -157,14 +133,14 @@
                 <div class="offcanvas-body">
                   <router-link to="/">
                     <button data-bs-dismiss="offcanvas">
-                      Home
+                      About Me
                     </button></router-link
                   >
                   <br />
 
                   <router-link to="about">
                     <button data-bs-dismiss="offcanvas">
-                      About
+                      Purpose
                     </button></router-link
                   >
                 </div>
@@ -206,7 +182,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 .header {
   position: fixed; /* Set the header to be fixed */
   top: 0; /* Position at the top of the viewport */
@@ -235,11 +211,6 @@ export default {
   align-items: center;
   flex-grow: 1;
 }
-.button button:hover {
-  /* Apply styles for hover state */
-  color: #f40303; /* Change this to your desired hover background color */
-  /* You can also modify other styles like text color, border, etc. */
-}
 
 .v-list-item:hover {
   color: #615d5d; /* Change this to your desired hover text color */
@@ -248,7 +219,7 @@ export default {
 .menu {
   display: none; /* Hide the div by default */
   margin-top: 30px;
-  color: #f40303;
+
 }
 
 /* Media query for small screens */
@@ -261,5 +232,8 @@ export default {
 .hide-on-md {
   display: flex;
   flex-direction: column; /* This makes the items stack vertically */
+}
+.no-underline {
+  text-decoration: none !important; 
 }
 </style>

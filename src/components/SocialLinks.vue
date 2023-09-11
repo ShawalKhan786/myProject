@@ -38,7 +38,7 @@
                 rel="noopener noreferrer"
               > 
             
-              <img class="mt-2" src="tiktok.webp"  alt="" width="22" height="22"> </a>
+              <img class="mt-2" src="tiktok.webp"  alt="" width="20" height="20"> </a>
              
              
             </div>
