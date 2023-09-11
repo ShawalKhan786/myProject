@@ -76,7 +76,7 @@
       <v-col cols="12">
       <div>
       <h1 class="text-center mt-6" id="Education"
-      >Education</h1><v-divider></v-divider></div>
+      ><i class="mdi mdi-school"></i>&nbsp;Education</h1><v-divider></v-divider></div>
      
     </v-col>
   </v-row> 
@@ -142,7 +142,7 @@
 
   >
     <v-card-text>
-        <p class="text-h6 text--primary">
+        <p class="text-h6 text--primary"> 
       Technical University of Ilmenau
       </p>
       <p>Master</p>
@@ -169,7 +169,8 @@
      
       <v-row class="mt-9">
         
-        <v-col cols="12 col-md-8"><h1 id="Experience">Experience</h1>
+        <v-col cols="12 col-md-8"><h1 id="Experience"><i class="mdi mdi-briefcase"></i>
+Experience</h1>
         <v-card min-height="370px"
 >
           <h3> Frontend Developer / JavaScript (Vue.JS) </h3>
@@ -192,7 +193,8 @@
 
         </v-card>
         </v-col>
-        <v-col cols="12 col-md-4"><h1 id="Skills">Skills</h1>
+        <v-col cols="12 col-md-4"><h1 id="Skills"><i class="mdi mdi-code-brackets"></i>
+Skills</h1>
           <div class="text-center">
    
 <v-card>
@@ -216,7 +218,8 @@
    
     <div class="card">
       <div class="card-header">
-        <h1 id="Projects">Projects</h1> 
+        <h1 id="Projects"><i class="mdi mdi-code"></i>
+Projects</h1> 
         <p>Enter The Password To See All The Projects:</p>
         <input type="password" v-model="password" placeholder="Enter Password">
         <button class="primary" @click="checkPassword">Submit</button>
@@ -258,7 +261,8 @@ qw
     <v-col cols="12 col-md-4">
       <div class="card" >
   <div class="card-body">
-    <h1 id="Certificate">Certificate</h1><v-divider></v-divider>
+    <h1 id="Certificate"><i class="mdi mdi-certificate"></i>
+Certificate</h1><v-divider></v-divider>
     <h4 class="card-subtitle mb-2 text-body-secondary">Vuejs The Complete Guide</h4>
     <p class="card-text">Including state management, component composition, and building dynamic user interfaces.</p>
     
@@ -270,7 +274,8 @@ qw
     <v-col cols="12 col-md-4">
       <div class="card" >
   <div class="card-body">
-    <h1 id="Language">Languages</h1><v-divider></v-divider>
+    <h1 id="Language"><i class="mdi mdi-earth"></i>
+Languages</h1><v-divider></v-divider>
     <h4 class="card-subtitle mb-2 text-body-secondary mt-6">English</h4>     <p class="card-text"> Native or Bilingual Proficiency</p>
     <h4 class="card-subtitle mb-2 text-body-secondary">German</h4>     <p class="card-text"> Elementary Proficiency</p>
     <p class="card-text"></p>
@@ -282,7 +287,8 @@ qw
 <v-col cols="12 col-md-4">
   <div class="card" >
   <div class="card-body">
-    <h1 id="Hobbies">Hobbies</h1><v-divider></v-divider>
+    <h1 id="Hobbies"><i class="mdi mdi-palette"></i>
+Hobbies</h1><v-divider></v-divider>
    <div>
     <v-chip 
       v-for="(item, index) in Hobbies"
@@ -317,7 +323,7 @@ export default {
       isPasswordCorrect: false,
       chipItems: ['JavaScript', 'VueJS', 'HTML5', 'CSS', 'Bootstrap5', 'Flexbox', 'Vuetify','npm','NuxtJS',
     'Vuex','Templates','Api Integrationa', 'Insomnia','Git', 'Jira', 'Slack', 'Refinement', 'Configuration','Node JS','Smart Git','SASS', 'Modular Designs', 'Responsive Design','Docker', 'Tailwind CSS'], // Replace with your array of items
-  Hobbies: ['Watching Movies', 'Internet Explorer', 'Travelling']
+  Hobbies: ['Watching Movies', 'Internet Explorer', 'Travelling', 'Youtuber']
     };
   },
   methods: {
