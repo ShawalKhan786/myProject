@@ -1,19 +1,19 @@
 <template>
   <v-container>
-    <nav id="navbar-example2" class="navbar bg-body-tertiary px-3  mb-3">
+    <nav id="navbar-example2" class="navbar px-3  ">
   <img
   src="ShawalKhanlogo.png"
     class="custom-image"
           />
   <ul class="nav nav-pills">
     <li class="nav-item">
-      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#Introduction" style="font-weight: bold;">Introduction</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#Education">Education</a>
+      <a class="nav-link" href="#Education" style="font-weight: bold;" >Education</a>
     </li>
     <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">More</a>
+      <a class="nav-link dropdown-toggle" style="font-weight: bold;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">More</a>
       <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="#Experience">Experience</a></li><li><hr class="dropdown-divider"></li>
         <li><a class="dropdown-item" href="#Skills">Skills</a></li>
@@ -323,7 +323,7 @@ export default {
       isPasswordCorrect: false,
       chipItems: ['JavaScript', 'VueJS', 'HTML5', 'CSS', 'Bootstrap5', 'Flexbox', 'Vuetify','npm','NuxtJS',
     'Vuex','Templates','Api Integrationa', 'Insomnia','Git', 'Jira', 'Slack', 'Refinement', 'Configuration','Node JS','Smart Git','SASS', 'Modular Designs', 'Responsive Design','Docker', 'Tailwind CSS'], // Replace with your array of items
-  Hobbies: ['Watching Movies', 'Internet Explorer', 'Travelling',]
+  Hobbies: ['Watching Movies', 'Internet Explorer', 'Travelling', ]
     };
   },
   methods: {
@@ -341,11 +341,14 @@ export default {
 .custom-rounded {
   border-radius: 20px; /* Adjust the value as needed */
 }
+.navbar{
+
+}
 #navbar-example2 {
   position: fixed;
   top: 0;
   width: 91.5vw; /* Default width based on viewport width */
-  background-color: #fff; /* Set your preferred background color */
+  background-color: rgba(255, 255, 255, 0.7);
   z-index: 1;
 }
 
