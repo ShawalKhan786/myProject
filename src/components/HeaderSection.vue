@@ -27,14 +27,14 @@
           <v-spacer></v-spacer>
 
           <div class="button">
-            <router-link to="home" class="no-underline">
+            <router-link to="/home" class="no-underline">
               <button class="ml-6 mt-4 mr-5">Home</button>
             </router-link>
 
-            <router-link to="resume" class="no-underline">
+            <router-link to="/resume" class="no-underline">
               <button class=" ml-6 mt-4 mr-5">Resume</button>
             </router-link>
-            <router-link to="about" class="no-underline">
+            <router-link to="/about" class="no-underline">
               <button class="ml-6 mt-4 mr-5">Contact</button>
             </router-link>
           </div>

@@ -11,17 +11,17 @@ const routes = [
     component: LayoutView,
     children: [
       {
-        path: 'home',
+        path: '/home',
         component: Home,
         name: 'home',
       },
       {
-        path: 'resume',
+        path: '/resume',
         component: MyResume,
         name: 'resume',
       },
       {
-        path: 'about',
+        path: '/about',
         component: AboutView,
         name: 'about',
       },
