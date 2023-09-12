@@ -69,10 +69,10 @@
                 <div class="offcanvas-body">
                   <router-link to="/">
                     <button data-bs-dismiss="offcanvas">
-                      Home
+                     <!-- Home-->
                     </button></router-link
                   ><br />
-                  <router-link to="/resume">
+                  <router-link to="/">
                     <button data-bs-dismiss="offcanvas">
                       Resume
                     </button></router-link
