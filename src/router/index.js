@@ -11,19 +11,19 @@ const routes = [
     component: LayoutView,
     children: [
       {
-        path: '/Home',
+        path: 'home',
         component: Home,
-        name: 'Home',
+        name: 'home',
       },
       {
-        path: '/Resume',
+        path: 'resume',
         component: MyResume,
-        name: 'MyResume',
+        name: 'resume',
       },
       {
-        path: '/about',
+        path: 'about',
         component: AboutView,
-        name: 'About',
+        name: 'about',
       },
      
       // Add more routes here
