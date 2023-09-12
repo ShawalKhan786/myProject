@@ -236,7 +236,7 @@
       <v-col cols="12 col-md-12" style="background-color: #727dd1">
         <div class="card">
           <div class="card-header">
-            <h1><i class="mdi mdi-code"></i> Projects</h1>
+            <h1>Projects</h1>
             <v-divider></v-divider>
             <p>(only for recruiters or recruitment process)</p>
             <input
@@ -404,7 +404,7 @@ body {
 .custom-image {
   max-width: 60%; /* Set the maximum width */
   border-radius: 30px; /* Rounded corners */
-  height: 10px; /* Default height for small screens */
+  max-height: 30px; /* Default height for small screens */
 }
 
 /* Media query for md screens and up */
@@ -420,6 +420,7 @@ body {
     height: 20px; /* Set the height for iPhone 12 Pro and similar screens */
   }
 }
+/* Set the height for iPhone 12 Pro and similar screens 
 @media (max-width: 768px) {
   #navbar-example2 {
     display: none;
@@ -427,7 +428,7 @@ body {
 }
 .nav {
   height: 12px;
-}
+}*/
 .dropdown-menu a.dropdown-item {
   font-weight: bold;
   color: rgb(72, 95, 226);
