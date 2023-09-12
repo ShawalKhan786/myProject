@@ -168,7 +168,7 @@
         </div></div
     ></v-card>
     <div id="Experience"></div>
-    <div id="Skills"></div>
+
     <v-row class="mt-6">
       <v-col cols="12 col-md-8 mt-7"
         ><h1><i class="mdi mdi-briefcase"></i> Experience</h1>
