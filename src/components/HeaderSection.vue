@@ -32,10 +32,10 @@
             </router-link>
 
             <router-link to="resume" class="no-underline">
-              <button class="nav-link active ml-6 mt-4 mr-5">Resume</button>
+              <button class=" ml-6 mt-4 mr-5">Resume</button>
             </router-link>
             <router-link to="about" class="no-underline">
-              <button class="nav-link active ml-6 mt-4 mr-5">Contact</button>
+              <button class="ml-6 mt-4 mr-5">Contact</button>
             </router-link>
           </div>
 
@@ -71,14 +71,14 @@
                       Home
                     </button></router-link
                   ><br />
-                  <router-link to="/Resume">
+                  <router-link to="/resume">
                     <button data-bs-dismiss="offcanvas">
                       Resume
                     </button></router-link
                   >
                   <br />
 
-                  <router-link to="about">
+                  <router-link to="/about">
                     <button data-bs-dismiss="offcanvas">
                       Contact
                     </button></router-link
