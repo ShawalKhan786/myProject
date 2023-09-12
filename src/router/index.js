@@ -11,17 +11,17 @@ const routes = [
     component: LayoutView,
     children: [
       {
-        path: '/home',
+        path: 'home',
         component: Home,
         name: 'home',
       },
       {
-        path: '/resume',
+        path: '/',
         component: MyResume,
         name: 'resume',
       },
       {
-        path: '/about',
+        path: 'about',
         component: AboutView,
         name: 'about',
       },
@@ -38,4 +38,4 @@ const router = createRouter({
   routes
 })
 
-export default router
+export default router;
