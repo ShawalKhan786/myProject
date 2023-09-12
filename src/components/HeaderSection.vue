@@ -25,83 +25,18 @@
           </h1>
 
           <v-spacer></v-spacer>
-          <div class="button mt-12">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <router-link to="/" class="no-underline">
-                  <button
-                    class="nav-link active"
-                    id="home-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#home-tab-pane"
-                    type="button"
-                    role="tab"
-                    aria-controls="home-tab-pane"
-                    aria-selected="true"
-                    style="text-decoration: none;"
-                  >
-                    About Me
-                  </button>
-                </router-link>
-              </li>
-              <li class="nav-item" role="presentation">
-                <router-link to="about" class="no-underline">
-                  <button
-                    class="nav-link no-underline"
-                    id="profile-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#profile-tab-pane"
-                    type="button"
-                    role="tab"
-                    aria-controls="profile-tab-pane"
-                    aria-selected="false"
-                    style="text-decoration: none;"
-                  >
-                    Purpose
-                  </button>
-                </router-link>
-              </li>
-           
-            
-            </ul>
-            <div class="tab-content" id="myTabContent">
-              <div
-                class="tab-pane fade show active"
-                id="home-tab-pane"
-                role="tabpanel"
-                aria-labelledby="home-tab"
-                tabindex="0"
-              >
-                ...
-              </div>
-              <div
-                class="tab-pane fade"
-                id="profile-tab-pane"
-                role="tabpanel"
-                aria-labelledby="profile-tab"
-                tabindex="0"
-              >
-                ...
-              </div>
-              <div
-                class="tab-pane fade"
-                id="contact-tab-pane"
-                role="tabpanel"
-                aria-labelledby="contact-tab"
-                tabindex="0"
-              >
-                ...
-              </div>
-              <div
-                class="tab-pane fade"
-                id="disabled-tab-pane"
-                role="tabpanel"
-                aria-labelledby="disabled-tab"
-                tabindex="0"
-              >
-                ...
-              </div>
-            </div>
+
+          <div class="button">
+            <router-link to="home" class="no-underline">
+              <button class="ml-6 mt-4 mr-5">Home</button>
+            </router-link>
+
+            <router-link to="resume" class="no-underline">
+              <button class="nav-link active ml-6 mt-4 mr-5">Resume</button>
+            </router-link>
+            <router-link to="about" class="no-underline">
+              <button class="nav-link active ml-6 mt-4 mr-5">Contact</button>
+            </router-link>
           </div>
 
           <div class="menu">
@@ -133,14 +68,19 @@
                 <div class="offcanvas-body">
                   <router-link to="/">
                     <button data-bs-dismiss="offcanvas">
-                      About Me
+                      Home
+                    </button></router-link
+                  ><br />
+                  <router-link to="/Resume">
+                    <button data-bs-dismiss="offcanvas">
+                      Resume
                     </button></router-link
                   >
                   <br />
 
                   <router-link to="about">
                     <button data-bs-dismiss="offcanvas">
-                      Purpose
+                      Contact
                     </button></router-link
                   >
                 </div>
@@ -192,8 +132,10 @@ export default {
   transition: top 0.5s ease;
 }
 .button {
-  margin-top: 35px;
-  margin-right: 35px;
+  display: flex; /* Use Flexbox to create a horizontal layout */
+
+  margin-left: 10px;
+  margin-right: 10px;
   font-size: 20px;
   font-family: "Times New Roman", Times, serif;
   color: #000000;
@@ -219,7 +161,6 @@ export default {
 .menu {
   display: none; /* Hide the div by default */
   margin-top: 30px;
-
 }
 
 /* Media query for small screens */
@@ -234,6 +175,6 @@ export default {
   flex-direction: column; /* This makes the items stack vertically */
 }
 .no-underline {
-  text-decoration: none !important; 
+  text-decoration: none !important;
 }
 </style>

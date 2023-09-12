@@ -44,9 +44,9 @@
             class="custom-rounded mt-9"
             src="ShawalKhan.png"
             alt=""
-            style="max-width: 10%; max-height: 100%"
+            style="max-width: 15%; max-height: 100%"
           />
-          <h1 class="mt-3 text-center mt-9">Introduction</h1>
+          <h1 class=" text-center mt-9 ml-3">Introduction</h1>
         </v-col>
         <v-divider></v-divider> </v-row
       ><v-row>
@@ -89,7 +89,7 @@
         </v-col>
       </v-row>
 
-      <div id="Education">
+      <div id="Education" >
         <br /><br />
         <div style="background-color: #f7f7f7">
           <br />
@@ -331,7 +331,7 @@
 </template>
 <script>
 export default {
-  name: "HomeView",
+  name: "MyResume",
   components: {},
   data() {
     return {
@@ -410,7 +410,7 @@ body {
 /* Media query for md screens and up */
 @media (min-width: 768px) {
   .custom-image {
-    height: 45px; /* Set the height for md screens and up */
+    height: 55px; /* Set the height for md screens and up */
   }
 }
 
