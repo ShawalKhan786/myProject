@@ -16,9 +16,9 @@ const routes = [
         name: 'home',
       },
       {
-        path: '/',
+        path: '/webresume',
         component: MyResume,
-        name: 'resume',
+        name: 'resu',
       },
       {
         path: '/about',

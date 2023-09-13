@@ -32,7 +32,7 @@
             </router-link>
             -->
 
-            <router-link to="/" class="no-underline">
+            <router-link to="/webresume" class="no-underline">
               <button class=" ml-6 mt-4 mr-5">Resume</button>
             </router-link>
             <router-link to="/about" class="no-underline">
@@ -72,7 +72,7 @@
                      <!-- Home-->
                     </button></router-link
                   ><br />
-                  <router-link to="/">
+                  <router-link to="/resume">
                     <button data-bs-dismiss="offcanvas">
                       Resume
                     </button></router-link
