@@ -3,6 +3,7 @@
     <v-row>
       <v-col cols="12">
         <v-toolbar height="65" style="background-color: rgb(255, 255, 255)">
+          <router-link to="/home" class="no-underline">
           <img
             src="ShawalKhanlogo.png"
             height="50"
@@ -10,6 +11,7 @@
             class="ml-9"
             style="border-radius: 30px"
           />
+        </router-link>
 
           <h1
             class="ml-3 mt-1"
@@ -27,16 +29,16 @@
           <v-spacer></v-spacer>
 
           <div class="button">
-     <!--       <router-link to="/home" class="no-underline">
+          <router-link to="/home" class="no-underline">
               <button class="ml-6 mt-4 mr-5">Home</button>
             </router-link>
-            -->
+        
 
             <router-link to="/webresume" class="no-underline">
               <button class=" ml-6 mt-4 mr-5">Resume</button>
             </router-link>
             <router-link to="/about" class="no-underline">
-              <button class="ml-6 mt-4 mr-5">Contact</button>
+              <button class="ml-6 mt-4 mr-5">About</button>
             </router-link>
           </div>
 
@@ -72,7 +74,7 @@
                      <!-- Home-->
                     </button></router-link
                   ><br />
-                  <router-link to="/resume">
+                  <router-link to="/webresume">
                     <button data-bs-dismiss="offcanvas">
                       Resume
                     </button></router-link
