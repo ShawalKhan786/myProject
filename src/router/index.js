@@ -11,7 +11,7 @@ const routes = [
     component: LayoutView,
     children: [
       {
-        path: '/home',
+        path: '/',
         component: Home,
         name: 'home',
       },

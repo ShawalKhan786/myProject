@@ -3,7 +3,7 @@
     <v-row>
       <v-col cols="12">
         <v-toolbar height="65" style="background-color: rgb(255, 255, 255)">
-          <router-link to="/home" class="no-underline">
+          <router-link to="/" class="no-underline">
           <img
             src="ShawalKhanlogo.png"
             height="50"
@@ -29,7 +29,7 @@
           <v-spacer></v-spacer>
 
           <div class="button">
-          <router-link to="/home" class="no-underline">
+          <router-link to="/" class="no-underline">
               <button class="ml-6 mt-4 mr-5">Home</button>
             </router-link>
         
