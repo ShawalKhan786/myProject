@@ -21,7 +21,7 @@ const routes = [
         name: 'resume',
       },
       {
-        path: 'about',
+        path: '/about',
         component: AboutView,
         name: 'about',
       },
