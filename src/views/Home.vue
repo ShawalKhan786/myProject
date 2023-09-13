@@ -12,7 +12,7 @@
             <br>Now you are here on the right place & in right hands
           </h2>
         </v-col>
-        <v-col cols="12 col-md-6 mt-12"> <img src="studyandcareer.png" alt="" style="max-height: 70%; max-width:80%"  ></v-col>
+        <v-col cols="12 col-md-6 mt-12"> <img src="studyandcareer.png" alt="" style="max-height: 70%; max-width:100%"  ></v-col>
         <v-col cols="12 text-center"> <!-- Add a v-col for centering -->
     <h2>"Every path is difficult until you take the first step"</h2>
   </v-col>
@@ -20,7 +20,7 @@
 
       <v-row style="background-color: #f7f7f7">
         <v-col cols="12 col-md-12 mt-9 " >
-<h1 class="mb-9">Welcome to Our Study and Career Guidance </h1>
+<h1 class="mb-9">Welcome to Study and Career Guidance </h1>
 <p>
   I'm here to help you navigate the exciting journey of studying and building a career in Germany. My mission is to provide you with valuable insights, guidance, and support to make informed decisions about your educational and career aspirations.
 </p>
