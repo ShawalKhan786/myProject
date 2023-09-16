@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 # PersonalProject
-This is my personal project.
+
 =======
 # khan
 
