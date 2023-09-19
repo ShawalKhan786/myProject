@@ -37,7 +37,7 @@
             <router-link to="/about" class="no-underline">
               <button class="ml-6 mt-4 mr-5">About</button>
             </router-link>
-            <router-link to="/about" class="no-underline">
+            <router-link to="/contact" class="no-underline">
               <button class="ml-6 mt-4 mr-5">Contact</button>
             </router-link>
             <router-link to="/webresume" class="no-underline">

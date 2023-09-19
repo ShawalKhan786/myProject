@@ -20,18 +20,19 @@ const routes = [
       {
         path: '/webresume',
         component: MyResume,
-        name: 'resu',
+        name: 'resume',
       },
       
-      {
-        path: '/contact',
-        component: ContactView,
-        name: 'contact',
-      },
+    
       {
         path: '/about',
         component: AboutView,
         name: 'about',
+      },
+      {
+        path: '/contact',
+        component: ContactView,
+        name: 'contact',
       },
       {
         path: '/blog',
