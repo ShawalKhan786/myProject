@@ -37,16 +37,11 @@
             <router-link to="/about" class="no-underline">
               <button class="ml-6 mt-4 mr-5">About</button>
             </router-link>
-            <router-link to="/contact" class="no-underline">
-              <button class="ml-6 mt-4 mr-5">Contact</button>
-            </router-link>
+           
             <router-link to="/webresume" class="no-underline">
               <button class=" ml-6 mt-4 mr-5">Resume</button>
             </router-link>
-            
-            <router-link to="/blog" class="no-underline">
-              <button class=" ml-6 mt-4 mr-5">Blog</button>
-            </router-link>
+           
            
             
           </div>
@@ -93,22 +88,14 @@
                
                   <br />
 
-                  <router-link to="/contact">
-                    <button data-bs-dismiss="offcanvas">
-                      Contact
-                    </button></router-link
-                  >
+                
                   <br>
                   <router-link to="/webresume">
                     <button data-bs-dismiss="offcanvas">
                       Resume
                     </button></router-link
                   >
-                  <br /> <router-link to="/blog">
-                    <button data-bs-dismiss="offcanvas">
-                      Blog
-                    </button></router-link
-                  >
+              
                   <br />
                 </div>
               </div>
