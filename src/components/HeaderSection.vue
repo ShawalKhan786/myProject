@@ -96,7 +96,7 @@
                     <button data-bs-dismiss="offcanvas">
                       Contact
                     </button></router-link
-                  >
+                  > <br>
                   <router-link to="/webresume">
                     <button data-bs-dismiss="offcanvas">
                       Resume
