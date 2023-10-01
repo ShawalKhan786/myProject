@@ -6,6 +6,7 @@ import ContactView from '../views/ContactView.vue'
 import AboutView from '../views/AboutView.vue'
 import MyResume from '../views/MyResume.vue'
 import BlogView from '../views/BlogView.vue'
+import YouTube from '../views/YouTube.vue'
 
 const routes = [
   {
@@ -38,7 +39,11 @@ const routes = [
         component: BlogView,
         name: 'blog',
       },
-     
+      {
+        path: '/youtube',
+        component: YouTube,
+        name: 'youtube',
+      },
       // Add more routes here
     ],
    

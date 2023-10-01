@@ -46,6 +46,9 @@
             <router-link to="/blog" class="no-underline">
               <button class=" ml-6 mt-4 mr-5">Blog</button>
             </router-link>
+            <router-link to="/youtube" class="no-underline">
+              <button class=" ml-6 mt-4 mr-5">Youtube</button>
+            </router-link>
            
             
           </div>
@@ -108,6 +111,11 @@
                     </button></router-link
                   >
                   <br />
+                  <router-link to="/youtube">
+                    <button data-bs-dismiss="offcanvas">
+                      Youtube
+                    </button></router-link
+                  >
                 </div>
               </div>
             </v-row>
