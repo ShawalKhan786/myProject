@@ -27,20 +27,19 @@
     </a>
   </div>
 
-  <v-row>
-    <v-col cols="12 col-md-12 mt-12">
-        <div>
-        <iframe
-     width="560"
-  height="315"
+<v-row>
+  <v-col cols="12 col-md-12 mb-12">
+ <iframe class="mt-12"
+height="100%"
       src="https://www.youtube.com/embed/LDIjXCUqTE0"
       frameborder="0"
       allowfullscreen
-    ></iframe></div>
-    </v-col>
-    <v-col></v-col>
-    <v-col></v-col>
+    ></iframe>
+  </v-col>
 </v-row>
+       
+
+    
   </div>
  
 </v-container>
