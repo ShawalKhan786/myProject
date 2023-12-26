@@ -38,6 +38,7 @@
     </nav>
     <div id="Introduction"></div>
     <v-card class="mt-15">
+      <v-col cols="12 col-md-12"> <img src="frontend.png" alt="" style="max-height: 70%; max-width:100%"  ></v-col>
       <v-row>
         <v-col cols="12 col-md-12">
           <img
@@ -53,7 +54,7 @@
         <v-col cols=" 12 col-md-12">
           <div style="background-color: #ffffff">
             <br />
-
+          
             <p 
               class="text-left ml-5 mr-5"
               style="color: rgb(47, 52, 191); font-size: large; font-weight: bold"
@@ -67,6 +68,7 @@
               digital experiences.
             </p>
             <br />
+           
             <ul>
               <li class="text-left ml-5 mr-5" style="font-size: large;">
                 My passion lies in harnessing the power of technology to drive
